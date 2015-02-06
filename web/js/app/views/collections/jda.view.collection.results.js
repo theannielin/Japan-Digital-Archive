@@ -73,7 +73,7 @@
 				$('.jda-results-collections-count').text( this.addCommas(collectionsCount));
 			}
 			$('.jda-results-items-count').text( this.addCommas(itemsCount));
-			$("#zeega-results-count-number").html( hello);
+			$("#zeega-results-count-number").text( this.addCommas(itemsCount) );
 		},
 
 		render : function(){
