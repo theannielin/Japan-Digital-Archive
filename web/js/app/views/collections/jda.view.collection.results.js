@@ -118,7 +118,7 @@
 				}
 
 			} else {
-				$('#zeega-results-count-number').text(yolah);
+				$('#zeega-results-count-number').text(this.addCommas(this.collection.count));
 				$("#zeega-results-count").fadeTo(100,1);
 			}
 
