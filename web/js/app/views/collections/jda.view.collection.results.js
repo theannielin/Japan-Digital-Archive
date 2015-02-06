@@ -73,7 +73,7 @@
 				$('.jda-results-collections-count').text( this.addCommas(collectionsCount));
 			}
 			$('.jda-results-items-count').text( this.addCommas(itemsCount));
-			$("#zeega-results-count-number").html( yolah? );
+			$("#zeega-results-count-number").html( this.addCommas(itemsCount) );
 		},
 
 		render : function(){
@@ -118,7 +118,7 @@
 				}
 
 			} else {
-				$('#zeega-results-count-number').text(this.addCommas(this.collection.count));
+				$('#zeega-results-count-number').text(yolah);
 				$("#zeega-results-count").fadeTo(100,1);
 			}
 
